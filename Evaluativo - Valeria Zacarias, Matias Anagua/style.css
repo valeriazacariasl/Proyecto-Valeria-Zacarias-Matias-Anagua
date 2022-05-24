@@ -105,3 +105,12 @@ p {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
+
+.per {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 15rem;
+    width: 15rem;
+}
