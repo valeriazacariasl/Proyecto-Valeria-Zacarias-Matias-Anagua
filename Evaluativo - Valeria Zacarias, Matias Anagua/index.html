@@ -5,29 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 
 <body>
     <header class="container">
-        <div class="navbar">
-            <!-- Navegador -->
-            <div class="logo">
-                <img src="img/pokemon-nav.png" width="140px">
-            </div>
-            <nav>
-                <ul class="menu">
-                    <li id="inicio"><a class="menu-item" href="">INICIO</a></li>
-                    <li id="sobreNosotros"><a class="menu-item" href="">SOBRE NOSOTROS</a></li>
-                    <li id="contacto"><a class="menu-item" href="">
-                            <input id="submit" type="submit" value="CONTACTO">
-                        </a></li>
-
-                </ul>
-                <!-- Fin nav-->
-            </nav>
+        <!-- Navegador -->
+        <div class="logo">
+            <img src="img/pokemon-nav.png" class="logo-img">
         </div>
+        <nav>
+            <ul class="menu">
+                <li><a class="menu-item" href="">INICIO</a></li>
+                <li><a class="menu-item" href="">SOBRE NOSOTROS</a></li>
+                <li><a class="menu-item" href="contacto.html">CONTACTO</a></li>
+            </ul>
+            <!-- Fin nav-->
+        </nav>
     </header>
     <main>
         <!-- Presentacion -->
@@ -39,10 +35,35 @@
                 Aca encontraras a todos tus pokemones favoritos.
             </p>
         </div>
-        <video src="img/vid2.mp4" autoplay controls></video>
+        <video id="video" controls autoplay>
+            <source src="img/vid2.mp4" type="video/mp4">
+        </video>
     </main>
     <h1>ENCONTRA TU PERSONAJE FAVORITO</h1>
     <div class="personajesfav">
+        <div class="personaje">
+            <div class="per">
+                <video src="img/vid3.mp4" autoplay controls></video>
+            </div>
+            <p class="comentario">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga magni, temporibus animi
+                dicta itaque rem similique
+                error et quidem voluptates illo minima dolore minus debitis accusamus modi explicabo
+                alias culpa.
+            </p>
+        </div>
+        <div class="personaje">
+            <div class="per">
+                <video src="img/vid4.mp4" autoplay controls></video>
+            </div>
+            <p class="comentario">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga magni, temporibus
+                animi
+                dicta itaque rem similique
+                error et quidem voluptates illo minima dolore minus debitis accusamus modi explicabo
+                alias culpa.
+            </p>
+        </div>
     </div>
     <div class="personajesfav">
         <div class="personaje">
@@ -50,7 +71,8 @@
                 <video src="img/vid5.mp4" autoplay controls></video>
             </div>
             <p class="comentario">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga magni, temporibus animi
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga magni, temporibus
+                animi
                 dicta itaque rem similique
                 error et quidem voluptates illo minima dolore minus debitis accusamus modi explicabo
                 alias culpa.
@@ -76,7 +98,7 @@
                     <img src="img/img3.jpeg">
                 </figure>
                 <div class="card-paragraph">
-                    <h3>ASH</h3>
+                    <h3>MISTY</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt unde voluptatum inventore illum
                         neque optio quam ullam itaque dolores culpa. Neque mollitia consequatur ipsum ad, veritatis
                         ratione placeat ullam perspiciatis.</p>
@@ -87,7 +109,7 @@
                     <img src="img/img4.jpeg">
                 </figure>
                 <div class="card-paragraph">
-                    <h3>MISTY</h3>
+                    <h3>ASH</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt
                         unde voluptatum inventore illum
                         neque optio quam ullam itaque dolores culpa. Neque mollitia
@@ -96,24 +118,37 @@
                 </div>
             </div>
         </div>
-        </div>
-        </div>
-        <footer>
-            <div class="foot-center">
-                <a href="https://es-la.facebook.com/Pokemon/"></a>
-                <a href="https://www.instagram.com/pokemon/"></a>
-                <a href="https://twitter.com/Pokemon?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"></a>
-                <p class="pokemon"> POKEMON</p>
-                <hr>
-                <a class="menu'item" href=""> INICIO</a>
-                <hr>
-                <a class="menu'item" href=""> SOBRE NOSOTROS</a>
-                <hr>
-                <a class="menu'item" href=""> CONTACTO</a>
+        <footer class="pie-pagina">
+            <div class="grupo-1">
+                <div class="box">
+                    <figure>
+                        <a href="#">
+                            <img src="img/pokemon-nav.png">
+                        </a>
+                    </figure>
+                </div>
+                <div class="box">
+                    <h2>SOBRE NOSOTROS</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod atque assumenda repudiandae quas
+                        eaque eos ipsam reprehenderit sapiente tenetur autem debitis placeat quis ducimus alias quos
+                        consequuntur, velit totam! Porro.</p>
+                </div>
+                <div class="box">
+                    <h2>SEGUINOS</h2>
+                    <div class="red-social">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-youtube"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="grupo-2">
+                <small>&copy; 2022 <b>POKEMON WIKI</b> - Todos los Derechos Reservados.</small>
             </div>
         </footer>
     </main>
+    <script src="scripts/index.js"></script>
 </body>
 
 </html>
-
